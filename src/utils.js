@@ -8,6 +8,8 @@ export const statusToneMap = {
   '已完成': 'done',
   '已评价': 'reviewed',
   '已关闭': 'closed',
+  '可派单': 'done',
+  '暂停接单': 'warning',
   PENDING_MANUAL_REVIEW: 'warning',
   MANUAL_CONFIRMED: 'parsed',
   SUCCESS: 'done',

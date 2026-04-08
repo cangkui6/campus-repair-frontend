@@ -67,7 +67,9 @@ th { color: var(--muted); font-weight: 500; }
 .ticket-card__head { display: flex; justify-content: space-between; align-items: center; gap: 12px; }
 .status-pill { display: inline-flex; align-items: center; justify-content: center; min-width: 84px; padding: 8px 12px; border-radius: 999px; font-size: 12px; border: 1px solid transparent; }
 .status-pill[data-tone='pending'] { background: rgba(255,200,87,.12); color: #ffd985; }
+.status-pill[data-tone='warning'] { background: rgba(255,122,89,.14); color: #ffb199; }
 .status-pill[data-tone='parsed'] { background: rgba(107,230,255,.12); color: #87f0ff; }
+.status-pill[data-tone='queued'] { background: rgba(255,184,92,.16); color: #ffd38f; }
 .status-pill[data-tone='assigned'] { background: rgba(72,167,255,.14); color: #8bc3ff; }
 .status-pill[data-tone='working'] { background: rgba(165,120,255,.15); color: #c9abff; }
 .status-pill[data-tone='done'] { background: rgba(78,230,163,.14); color: #98f7c8; }

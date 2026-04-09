@@ -59,7 +59,7 @@ input:focus, textarea:focus { border-color: rgba(107,230,255,.7); box-shadow: 0 
 .section-head { display: flex; justify-content: space-between; align-items: center; gap: 16px; }
 .cluster { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; }
 .table-wrap { overflow: auto; border-radius: 18px; border: 1px solid rgba(255,255,255,.08); }
-table { width: 100%; border-collapse: collapse; min-width: 760px; }
+table { width: 100%; border-collapse: collapse; min-width: 1100px; }
 th, td { padding: 16px; border-bottom: 1px solid rgba(255,255,255,.06); text-align: left; }
 th { color: var(--muted); font-weight: 500; }
 .kanban-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 16px; }
@@ -74,7 +74,8 @@ th { color: var(--muted); font-weight: 500; }
 .status-pill[data-tone='working'] { background: rgba(165,120,255,.15); color: #c9abff; }
 .status-pill[data-tone='done'] { background: rgba(78,230,163,.14); color: #98f7c8; }
 .status-pill[data-tone='reviewed'], .status-pill[data-tone='closed'] { background: rgba(255,255,255,.08); color: #ebf4ff; }
-.action-grid { display: flex; flex-wrap: wrap; gap: 8px; }
+.action-grid { display: flex; flex-wrap: wrap; gap: 8px; min-width: 220px; }
+.action-grid .btn { white-space: nowrap; flex: 0 0 auto; }
 .worker-pool { display: grid; gap: 16px; padding: 18px; border-radius: 24px; background: rgba(255,255,255,.03); border: 1px solid rgba(255,255,255,.08); }
 .worker-pool__head { display: flex; justify-content: space-between; gap: 16px; align-items: start; }
 .worker-pool__default { display: flex; justify-content: space-between; align-items: center; gap: 12px; padding: 14px 16px; border-radius: 18px; background: linear-gradient(135deg, rgba(107,230,255,.12), rgba(72,167,255,.10)); border: 1px solid rgba(107,230,255,.25); }
@@ -96,7 +97,28 @@ th { color: var(--muted); font-weight: 500; }
 .profile-grid > div, .profile-grid > label { padding: 16px; border-radius: 18px; background: rgba(255,255,255,.03); border: 1px solid rgba(255,255,255,.08); }
 .profile-grid span { display: block; color: var(--muted); margin-bottom: 8px; font-size: 13px; }
 select { width: 100%; padding: 14px 16px; color: var(--text); background: rgba(255,255,255,.04); border: 1px solid rgba(255,255,255,.08); border-radius: 18px; outline: none; }
+select option { background: #0d1b2f; color: var(--text); }
 .dashboard-columns { display: grid; grid-template-columns: repeat(3,1fr); gap: 16px; }
+.rule-hero { display:flex; justify-content:space-between; gap:16px; align-items:center; padding:18px; border-radius:22px; background:linear-gradient(135deg, rgba(107,230,255,.08), rgba(72,167,255,.08)); border:1px solid rgba(107,230,255,.18); }
+.rule-grid { display:grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap:14px; }
+.rule-card { padding:18px; border-radius:20px; background:rgba(255,255,255,.03); border:1px solid rgba(255,255,255,.08); display:grid; gap:12px; }
+.rule-card__head { display:flex; justify-content:space-between; gap:12px; align-items:center; }
+input[type='range'] { accent-color: var(--accent); }
+.stats-visual { display:grid; gap:18px; }
+.stats-kpi-grid { display:grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap:14px; }
+.kpi-card { padding:18px; border-radius:20px; background:linear-gradient(180deg, rgba(107,230,255,.08), rgba(255,255,255,.03)); border:1px solid rgba(107,230,255,.15); display:grid; gap:8px; }
+.kpi-card span, .kpi-card small { color: var(--muted); }
+.kpi-card strong { font-size:28px; }
+.bar-list { display:grid; gap:12px; margin-top:12px; }
+.bar-item { display:grid; gap:8px; }
+.bar-item__head { display:flex; justify-content:space-between; gap:12px; }
+.bar-track { height:10px; border-radius:999px; background:rgba(255,255,255,.08); overflow:hidden; }
+.bar-track--warm { background:rgba(255,200,87,.12); }
+.bar-fill { height:100%; border-radius:999px; background:linear-gradient(90deg, #6be6ff, #48a7ff); }
+.bar-fill--warm { background:linear-gradient(90deg, #ffc857, #ff8a48); }
+.bar-fill--cyan { background:linear-gradient(90deg, #75f0ff, #55b9ff); }
+.weight-ring-list { display:grid; gap:12px; margin-top:12px; }
+.weight-line { display:grid; grid-template-columns: 92px 1fr 52px; gap:10px; align-items:center; }
 .mini-panel { padding: 18px; border-radius: 22px; background: rgba(255,255,255,.03); border: 1px solid rgba(255,255,255,.08); }
 .metric-list { list-style: none; padding: 0; margin: 12px 0 0; display: grid; gap: 10px; }
 .metric-list li { display: flex; justify-content: space-between; gap: 16px; color: #dce9fb; }

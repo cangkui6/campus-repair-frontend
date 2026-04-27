@@ -37,6 +37,9 @@ input:focus, textarea:focus { border-color: rgba(107,230,255,.7); box-shadow: 0 
 .btn-ghost { background: rgba(255,255,255,.05); color: var(--text); border: 1px solid rgba(255,255,255,.08); }
 .btn-danger { background: rgba(255,107,122,.13); color: #ffd7dc; border: 1px solid rgba(255,107,122,.24); }
 .feedback { font-size: 14px; }
+.notice-card { display: grid; gap: 8px; padding: 16px 18px; border-radius: 20px; background: linear-gradient(135deg, rgba(107,230,255,.10), rgba(72,167,255,.06)); border: 1px solid rgba(107,230,255,.20); }
+.notice-card strong { color: #dffaff; }
+.notice-card p { margin: 0; }
 .feedback-success { color: var(--ok); }
 .feedback-error { color: #ff98a2; }
 .demo-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 12px; margin-top: 10px; }
